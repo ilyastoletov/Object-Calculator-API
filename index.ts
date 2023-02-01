@@ -5,7 +5,7 @@ import { router } from "./controllers/app_router";
 const app = Fastify({logger: true});
 
 try {
-    mongoose.connect('mongodb://127.0.0.1:27017/categories')
+    mongoose.connect('mongodb+srv://root:MjwGrjecAFiOsf6w@cluster0.lwtrrl6.mongodb.net/categories')
     mongoose.set('debug', true)
 } catch(e) {
     console.log(`MongoDB Error ${e}`)
